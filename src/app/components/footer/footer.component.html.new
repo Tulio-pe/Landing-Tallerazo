@@ -1,0 +1,69 @@
+<footer class="relative bg-gradient-to-tr from-gray-100 to-gray-200 pt-28 rounded-t-3xl">
+    <div class="absolute right-0 top-0 h-full w-full flex justify-end">
+        <div class="w-28 h-28 overflow-auto flex rounded-xl relative blur-2xl">
+            <span class="absolute w-16 h-16 -top-1 -right-1 bg-green-500 rounded-md rotate-45"></span>
+            <span class="absolute w-16 h-16 -bottom-1 -right-1 bg-[#FCDC58] rounded-md rotate-45"></span>
+            <span class="absolute w-16 h-16 -bottom-1 -left-1 bg-[var(--primary)] rounded-md rotate-45"></span>
+        </div>
+    </div>
+    <div class="mx-auto max-w-7xl w-full px-5 sm:px-8 md:px-14 lg:px-5 pb-8 relative overflow-auto">
+        <div class="grid grid-cols-2 lg:grid-cols-3 lg:items-stretch gap-8 relative">
+            <div class="col-span-2 lg:col-span-1 h-auto flex flex-col">
+                <div class="h-full">
+                    <a href="#" class="relative flex items-center gap-3">
+                        <img src="./assets/img/logo.png" alt="logo" class="w-16 h-16">
+                        <div class="inline-flex text-lg font-semibold text-[var(--heading-1)]">
+                            Tallerazo
+                        </div>
+                    </a>
+                    <p class="mt-8 text-[var(--heading-3)]">
+                        Todos los derechos reservados © {{ currentYear }}
+                    </p>
+                </div>
+
+                <!-- social links -->
+                <div class="min-h-max flex items-center gap-4 text-[var(--heading-3)] mt-8">
+                    <a href="#" class="transition hover:text-[var(--heading-1)] hover:scale-105">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="w-5 h-5" viewBox="0 0 16 16">
+                            <path d="M16 8.049c0-4.446-3.582-8.05-8-8.05C3.58 0-.002 3.603-.002 8.05c0 4.017 2.926 7.347 6.75 7.951v-5.625h-2.03V8.05H6.75V6.275c0-2.017 1.195-3.131 3.022-3.131.876 0 1.791.157 1.791.157v1.98h-1.009c-.993 0-1.303.621-1.303 1.258v1.51h2.218l-.354 2.326H9.25V16c3.824-.604 6.75-3.934 6.75-7.951z"/>
+                        </svg>
+                    </a>
+                </div>
+            </div>
+            
+            <!-- Links -->
+            <div class="flex flex-col">
+                <h3 class="text-base font-semibold text-[var(--heading-1)] mb-4">Servicios</h3>
+                <ul class="space-y-3 text-[var(--heading-3)]">
+                    <li>
+                        <a href="#services" class="transition hover:text-[var(--heading-1)]">
+                            Mantenimiento de Vehículos
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#services" class="transition hover:text-[var(--heading-1)]">
+                            Reparaciones Automotrices
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            
+            <!-- Legal -->
+            <div class="flex flex-col">
+                <h3 class="text-base font-semibold text-[var(--heading-1)] mb-4">Términos de Servicio</h3>
+                <ul class="space-y-3 text-[var(--heading-3)]">
+                    <li>
+                        <a href="#" class="transition hover:text-[var(--heading-1)]">
+                            Política de Privacidad
+                        </a>
+                    </li>
+                    <li>
+                        <a href="#" class="transition hover:text-[var(--heading-1)]">
+                            Términos de Servicio
+                        </a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+</footer>

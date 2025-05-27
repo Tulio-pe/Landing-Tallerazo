@@ -1,0 +1,30 @@
+/* Modal backdrop animation */
+.bg-opacity-75 {
+    animation: fadeIn 0.3s ease-in-out;
+}
+
+/* Modal content animation */
+.transform {
+    animation: slideIn 0.3s ease-out;
+}
+
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 0.75; }
+}
+
+@keyframes slideIn {
+    from { 
+        transform: translateY(-10%);
+        opacity: 0;
+    }
+    to { 
+        transform: translateY(0);
+        opacity: 1; 
+    }
+}
+
+/* Make sure modal is above everything else */
+.z-50 {
+    z-index: 9999;
+}

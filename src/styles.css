@@ -1,0 +1,30 @@
+/* Google Fonts import - must come before Tailwind directives */
+@import url('https://fonts.googleapis.com/css2?family=Manrope:wght@200;300;400;500;600;700;800&display=swap');
+
+/* Tailwind CSS directives */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --color-box: 255, 255, 255;
+  --box-sd: 226, 232, 240;
+  --box-border: 226, 232, 240;
+  --primary: #1d4ed8;
+  --primary-hover: #1e40af;
+  --heading-1: 15, 23, 42;
+  --heading-2: 51, 65, 85;
+  --heading-3: 71, 85, 105;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Manrope', sans-serif;
+}
+
+html, body {
+  height: 100%;
+  width: 100%;
+}

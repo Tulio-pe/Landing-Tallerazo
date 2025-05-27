@@ -1,0 +1,19 @@
+/* Show class for mobile menu */
+[data-navbar].show {
+  height: auto !important;
+  overflow: visible;
+  padding-bottom: 1.5rem;
+}
+
+/* Hamburger menu animation */
+[data-toggle-nav][data-open-nav="true"] #line1 {
+  transform: rotate(45deg) translate(0.3rem, 0.4rem);
+}
+
+[data-toggle-nav][data-open-nav="true"] #line2 {
+  opacity: 0;
+}
+
+[data-toggle-nav][data-open-nav="true"] #line3 {
+  transform: rotate(-45deg) translate(0.3rem, -0.4rem);
+}
