@@ -1,6 +1,6 @@
 <header class="absolute inset-x-0 top-0 z-50 py-6">
     <div class="mx-auto max-w-7xl w-full px-5 sm:px-8 md:px-14 lg:px-5 flex flex-col lg:flex-row gap-10 lg:gap-12">
-        <nav class="w-full flex justify-between gap-6 relative">
+        <nav class="w-full flex items-center justify-between gap-6 relative">
             <!-- logo -->
             <div class="min-w-max inline-flex relative">
                 <a href="/" class="relative flex items-center gap-3">                    <div class="relative w-20">
@@ -11,8 +11,6 @@
                     </div>
                 </a>
             </div>
-
-            <div data-nav-overlay aria-hidden="true" class="fixed hidden inset-0 lg:!hidden bg-[var(--box-bg)] bg-opacity-50 backdrop-filter backdrop-blur-xl"></div>
             <div data-navbar class="flex h-0 overflow-hidden lg:!h-auto lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-body lg:bg-transparent border-x border-x-[var(--box-border)] lg:border-x-0">                <ul class="border-t border-[var(--box-border)] lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-[var(--heading-2)] w-full lg:justify-center lg:items-center">                    <li>                         <a href="#" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">Home</a>
                     </li>
                     <li>
@@ -25,12 +23,22 @@
                          <a href="#plans" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">Plans</a>
                     </li>
                 </ul>
-                  <div class="lg:min-w-max flex flex-col lg:flex-row gap-4 items-center sm:w-max w-full pb-6 lg:pb-0 border-b border-[var(--box-bg)] lg:border-0 px-6 lg:px-0">
-                      <a target="_blank" href="https://tallerazo-front-three.vercel.app/" class="bg-[var(--primary)] text-white px-6 py-3 rounded-full hover:bg-[var(--primary-hover)] transition-colors duration-300 cursor-pointer">
-                    Empezar
-                    </a>
-                </div>
             </div>
+
+          <div class="flex items-center gap-2 text-sm font-medium">
+            <button
+
+              class="px-3 py-1 rounded-lg transition-colors"
+            >
+              EN
+            </button>
+            <button
+
+              class="px-3 py-1 rounded-lg transition-colors"
+            >
+              ES
+            </button>
+          </div>
         </nav>
     </div>
 </header>

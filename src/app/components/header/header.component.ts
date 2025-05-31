@@ -10,12 +10,15 @@ import { PLATFORM_ID } from '@angular/core';
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent implements OnInit {
+export class HeaderComponent /*implements OnInit*/ {
   private platformId = inject(PLATFORM_ID);
   private document = inject(DOCUMENT);
 
   constructor() { }
 
+
+
+/*
   ngOnInit(): void {
     // Only run browser-specific code if we're in a browser
     if (isPlatformBrowser(this.platformId)) {
@@ -33,9 +36,9 @@ export class HeaderComponent implements OnInit {
       if (navButton && navMenu && navOverlay) {
         const toggleNavHandler = (): void => {
           const isOpen = navButton.getAttribute("data-open-nav") === "true";
-          
+
           navButton.setAttribute("data-open-nav", isOpen ? "false" : "true");
-          
+
           if (!isOpen) {
             navOverlay.classList.remove("hidden");
             this.document.body.classList.add("overflow-hidden");
@@ -57,23 +60,23 @@ export class HeaderComponent implements OnInit {
   setupSmoothScrolling(): void {
     setTimeout(() => {
       const navLinks = this.document.querySelectorAll('a[href^="#"]');
-      
+
       navLinks.forEach((link: Element) => {
         link.addEventListener('click', (e: Event) => {
           e.preventDefault();
-          
+
           // Get the target element
           const targetId = link.getAttribute('href');
           if (!targetId || targetId === '#') return;
-          
+
           const targetElement = this.document.querySelector(targetId);
           if (!targetElement) return;
-          
+
           // Close mobile menu if open
           const navButton = this.document.querySelector("[data-toggle-nav]") as HTMLElement;
           const navMenu = this.document.querySelector("[data-navbar]") as HTMLElement;
           const navOverlay = this.document.querySelector("[data-nav-overlay]") as HTMLElement;
-          
+
           if (navButton && navMenu && navOverlay) {
             const isOpen = navButton.getAttribute("data-open-nav") === "true";
             if (isOpen) {
@@ -93,4 +96,5 @@ export class HeaderComponent implements OnInit {
     }, 0);
   }
     // Removed language functionality
+    */
 }
