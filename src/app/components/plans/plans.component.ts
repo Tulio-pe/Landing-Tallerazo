@@ -2,11 +2,12 @@ import { Component, PLATFORM_ID, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { FormsModule } from '@angular/forms';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-plans',
   standalone: true,
-  imports: [CommonModule, FormsModule],
+  imports: [CommonModule, FormsModule, TranslateModule],
   templateUrl: './plans.component.html',
   styleUrl: './plans.component.css'
 })
@@ -26,7 +27,7 @@ export class PlansComponent {
     cvv: ''
   };
 
-  constructor() { }
+  constructor(private translate: TranslateService) { }
   
   openModal(plan: string, price: string): void {
     if (isPlatformBrowser(this.platformId)) {
@@ -43,10 +44,10 @@ export class PlansComponent {
       this.resetForm();
     }
   }
-  
-  processPurchase(): void {
+    processPurchase(): void {
     // Here you would add the logic to process the payment
-    alert(`Compra del plan ${this.selectedPlan.name} realizada con éxito!`);
+    const message = this.translate.instant('PLANS.PURCHASE_SUCCESS', { plan: this.selectedPlan.name });
+    alert(message);
     this.closeModal();
   }
   

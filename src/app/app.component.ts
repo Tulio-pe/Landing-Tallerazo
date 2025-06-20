@@ -9,6 +9,7 @@ import { CtaComponent } from './components/cta/cta.component';
 import { PlansComponent } from './components/plans/plans.component';
 import { TeamComponent } from './components/team/team.component';
 import { FooterComponent } from './components/footer/footer.component';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-root',
@@ -22,7 +23,8 @@ import { FooterComponent } from './components/footer/footer.component';
     CtaComponent,
     PlansComponent,
     TeamComponent,
-    FooterComponent
+    FooterComponent,
+    TranslateModule
   ],
   templateUrl: './app.component.html',
   styleUrl: './app.component.css'
@@ -30,6 +32,21 @@ import { FooterComponent } from './components/footer/footer.component';
 export class AppComponent implements OnInit {
   private platformId = inject(PLATFORM_ID);
   private document = inject(DOCUMENT);
+  
+  constructor(private translate: TranslateService) {
+    // Set default language
+    translate.setDefaultLang('en');
+    
+    // Try to get language from localStorage if in browser environment
+    if (isPlatformBrowser(this.platformId)) {
+      const savedLang = localStorage.getItem('preferredLanguage');
+      if (savedLang && (savedLang === 'en' || savedLang === 'es')) {
+        translate.use(savedLang);
+      } else {
+        translate.use('en');
+      }
+    }
+  }
   
   title = 'Tallerazo';
   isMobileMenuOpen = false;
@@ -119,7 +136,7 @@ export class AppComponent implements OnInit {
       cta: 'Contactar ventas'
     }
   ];
-
+  
   ngOnInit() {
     // Only run browser-specific code if we're in a browser
     if (!isPlatformBrowser(this.platformId)) {

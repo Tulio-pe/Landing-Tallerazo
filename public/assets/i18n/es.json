@@ -1,0 +1,95 @@
+{
+  "HEADER": {
+    "HOME": "Inicio",
+    "SERVICES": "Servicios",
+    "ABOUT": "Nosotros",
+    "PLANS": "Planes"
+  },
+  "HERO": {
+    "TITLE": "Tu Taller de Confianza",
+    "SUBTITLE": "Servicio Experto para Todas las Marcas y Modelos",
+    "BUTTON": "Agendar Ahora"
+  },
+  "SERVICES": {
+    "TITLE": "Nuestros Servicios",
+    "SUBTITLE": "Lo que Ofrecemos",
+    "CARD1_TITLE": "Gestión de citas online",
+    "CARD1_TEXT": "Reserva tu cita en el taller más cercano y disponible sin llamadas ni complicaciones.",
+    "CARD2_TITLE": "Seguimiento en tiempo real",
+    "CARD2_TEXT": "Conoce el estado de la reparación de tu vehículo desde cualquier lugar.",
+    "CARD3_TITLE": "Comunicación directa",
+    "CARD3_TEXT": "Habla directamente con el taller, recibe actualizaciones, cotizaciones y reportes claros."
+  },
+  "ABOUT": {
+    "TITLE": "Sobre Nosotros",
+    "SUBTITLE": "Somos una plataforma tecnológica enfocada en simplificar el mantenimiento vehicular para todos los propietarios de autos.",
+    "MISSION_TITLE": "Nuestra Misión",
+    "MISSION_TEXT": "Proporcionar una solución sencilla y transparente para que los propietarios de vehículos se conecten con talleres de confianza.",
+    "VISION_TITLE": "Nuestra Visión",
+    "VISION_TEXT": "Convertirnos en la plataforma líder de servicios automotrices, mejorando la experiencia tanto para clientes como para talleres."
+  },
+  "PLANS": {
+    "TITLE": "Nuestros Planes",
+    "SUBTITLE": "Elige la Mejor Opción para Ti",
+    "MONTH": "mes",
+    "BASIC_TITLE": "Básico",
+    "BASIC_PRICE": "0",
+    "BASIC_FEATURE1": "Acceso a la plataforma",
+    "BASIC_FEATURE2": "Gestión de citas básica",
+    "BASIC_FEATURE3": "Comunicación con clientes",
+    "BASIC_FEATURE4": "Reportes mensuales",
+    "CHOOSE_BASIC": "Comenzar gratis",
+    "PRO_TITLE": "Pro",
+    "PRO_PRICE": "10",
+    "PRO_FEATURE1": "Todas las características Básicas",
+    "PRO_FEATURE2": "Panel de control avanzado",
+    "PRO_FEATURE3": "Soporte prioritario",
+    "PRO_FEATURE4": "Analíticas detalladas",
+    "CHOOSE_PRO": "Elegir Pro",
+    "PREMIUM_TITLE": "Premium",
+    "PREMIUM_PRICE": "20",
+    "PREMIUM_FEATURE1": "Todas las características Pro",
+    "PREMIUM_FEATURE2": "Integración con calendario",
+    "PREMIUM_FEATURE3": "Panel de control avanzado",
+    "PREMIUM_FEATURE4": "Reportes detallados",
+    "PREMIUM_FEATURE5": "Soporte prioritario 24/7",
+    "CHOOSE_PREMIUM": "Elegir Premium",
+    "MODAL_TITLE": "Comprar Plan",
+    "MODAL_DESCRIPTION": "Complete el formulario para adquirir el plan por $",
+    "MODAL_NAME_LABEL": "Nombre completo",
+    "MODAL_EMAIL_LABEL": "Correo electrónico",
+    "MODAL_CARD_NUMBER_LABEL": "Número de tarjeta",
+    "MODAL_EXPIRY_LABEL": "Fecha de expiración",
+    "MODAL_CVV_LABEL": "CVV",    "MODAL_CONFIRM_BUTTON": "Confirmar compra",
+    "MODAL_CANCEL_BUTTON": "Cancelar",
+    "PURCHASE_SUCCESS": "¡Compra del plan {{plan}} realizada con éxito!"
+  },
+  "TEAM": {
+    "TITLE": "Nuestro Equipo",
+    "SUBTITLE": "Conoce a los Expertos",
+    "MEMBER1_NAME": "Jesús Castillo",
+    "MEMBER1_ROLE": "Ingeniería de Software",
+    "MEMBER2_NAME": "Yasser Rentería",
+    "MEMBER2_ROLE": "Ingeniería de Software",
+    "MEMBER3_NAME": "Renato Calvo",
+    "MEMBER3_ROLE": "Ingeniería de Software",
+    "MEMBER4_NAME": "Raúl Medina",
+    "MEMBER4_ROLE": "Ingeniería de Software",
+    "MEMBER5_NAME": "Gianfranco Durand",
+    "MEMBER5_ROLE": "Ingeniería de Software"
+  },
+  "CTA": {
+    "TITLE": "¿Listo para Comenzar?",
+    "SUBTITLE": "Contáctanos hoy para programar tu servicio",
+    "BUTTON": "Contáctanos"
+  },
+  "FOOTER": {
+    "RIGHTS": "Todos los derechos reservados",
+    "PRIVACY": "Política de Privacidad",
+    "TERMS": "Términos de Servicio",
+    "SERVICES_TITLE": "Servicios",    "VEHICLE_MAINTENANCE": "Mantenimiento de Vehículos",
+    "AUTOMOTIVE_REPAIRS": "Reparaciones Automotrices",    "LEGAL_TITLE": "Términos de Servicio",
+    "SLOGAN": "Conecta. Agenda. Confía.",
+    "LOGO_TEXT": "Tallerazo.pe"
+  }
+}

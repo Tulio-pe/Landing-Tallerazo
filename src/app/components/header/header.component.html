@@ -11,29 +11,35 @@
                     </div>
                 </a>
             </div>
-            <div data-navbar class="flex h-0 overflow-hidden lg:!h-auto lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-body lg:bg-transparent border-x border-x-[var(--box-border)] lg:border-x-0">                <ul class="border-t border-[var(--box-border)] lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-[var(--heading-2)] w-full lg:justify-center lg:items-center">                    <li>                         <a href="#" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">Home</a>
+            <div data-navbar class="flex h-0 overflow-hidden lg:!h-auto lg:scale-y-100 duration-300 ease-linear flex-col gap-y-6 gap-x-4 lg:flex-row w-full lg:justify-between lg:items-center absolute lg:relative top-full lg:top-0 bg-body lg:bg-transparent border-x border-x-[var(--box-border)] lg:border-x-0">                <ul class="border-t border-[var(--box-border)] lg:border-t-0 px-6 lg:px-0 pt-6 lg:pt-0 flex flex-col lg:flex-row gap-y-4 gap-x-3 text-lg text-[var(--heading-2)] w-full lg:justify-center lg:items-center">                    <li>                         <a href="#" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">{{ 'HEADER.HOME' | translate }}</a>
                     </li>
                     <li>
-                         <a href="#services" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">Services</a>
+                         <a href="#services" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">{{ 'HEADER.SERVICES' | translate }}</a>
                     </li>
                     <li>
-                         <a href="#about-us" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">About</a>
+                         <a href="#about-us" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">{{ 'HEADER.ABOUT' | translate }}</a>
                     </li>
                     <li>
-                         <a href="#plans" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">Plans</a>
+                         <a href="#plans" class="duration-300 font-medium ease-linear hover:text-[var(--primary)] py-3">{{ 'HEADER.PLANS' | translate }}</a>
                     </li>
                 </ul>
             </div>
 
           <div class="flex items-center gap-2 text-sm font-medium">
             <button
-
+              (click)="changeLanguage('en')"
+              [class.bg-blue-600]="currentLang === 'en'"
+              [class.text-white]="currentLang === 'en'"
+              [class.bg-transparent]="currentLang !== 'en'"
               class="px-3 py-1 rounded-lg transition-colors"
             >
               EN
             </button>
             <button
-
+              (click)="changeLanguage('es')"
+              [class.bg-blue-600]="currentLang === 'es'"
+              [class.text-white]="currentLang === 'es'"
+              [class.bg-transparent]="currentLang !== 'es'"
               class="px-3 py-1 rounded-lg transition-colors"
             >
               ES

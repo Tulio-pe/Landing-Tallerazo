@@ -1,0 +1,95 @@
+{
+  "HEADER": {
+    "HOME": "Home",
+    "SERVICES": "Services",
+    "ABOUT": "About",
+    "PLANS": "Plans"
+  },
+  "HERO": {
+    "TITLE": "Your Trusted Car Workshop",
+    "SUBTITLE": "Expert Service for All Makes and Models",
+    "BUTTON": "Schedule Now"
+  },
+  "SERVICES": {
+    "TITLE": "Our Services",
+    "SUBTITLE": "What We Offer",
+    "CARD1_TITLE": "Online Appointment Management",
+    "CARD1_TEXT": "Book your appointment at the nearest and available workshop without calls or complications.",
+    "CARD2_TITLE": "Real-time Tracking",
+    "CARD2_TEXT": "Know the status of your vehicle repair from anywhere.",
+    "CARD3_TITLE": "Direct Communication",
+    "CARD3_TEXT": "Talk directly with the workshop, receive updates, quotes, and clear reports."
+  },
+  "ABOUT": {
+    "TITLE": "About Us",
+    "SUBTITLE": "We are a technology platform focused on simplifying vehicle maintenance for all car owners.",
+    "MISSION_TITLE": "Our Mission",
+    "MISSION_TEXT": "To provide a simple and transparent solution for vehicle owners to connect with trusted workshops.",
+    "VISION_TITLE": "Our Vision",
+    "VISION_TEXT": "To become the leading platform for automotive services, improving the experience for customers and workshops alike."
+  },
+  "PLANS": {
+    "TITLE": "Our Plans",
+    "SUBTITLE": "Choose the Best Option for You",
+    "MONTH": "month",
+    "BASIC_TITLE": "Basic",
+    "BASIC_PRICE": "0",
+    "BASIC_FEATURE1": "Platform Access",
+    "BASIC_FEATURE2": "Basic Appointment Management",
+    "BASIC_FEATURE3": "Customer Communication",
+    "BASIC_FEATURE4": "Monthly Reports",
+    "CHOOSE_BASIC": "Start Free",
+    "PRO_TITLE": "Pro",
+    "PRO_PRICE": "10",
+    "PRO_FEATURE1": "All Basic Features",
+    "PRO_FEATURE2": "Advanced Dashboard",
+    "PRO_FEATURE3": "Priority Support",
+    "PRO_FEATURE4": "Detailed Analytics",
+    "CHOOSE_PRO": "Choose Pro",
+    "PREMIUM_TITLE": "Premium",
+    "PREMIUM_PRICE": "20",
+    "PREMIUM_FEATURE1": "All Pro Features",
+    "PREMIUM_FEATURE2": "Calendar Integration",
+    "PREMIUM_FEATURE3": "Advanced Dashboard",
+    "PREMIUM_FEATURE4": "Detailed Reports",
+    "PREMIUM_FEATURE5": "24/7 Priority Support",
+    "CHOOSE_PREMIUM": "Choose Premium",
+    "MODAL_TITLE": "Buy Plan",
+    "MODAL_DESCRIPTION": "Complete the form to purchase the plan for $",
+    "MODAL_NAME_LABEL": "Full Name",
+    "MODAL_EMAIL_LABEL": "Email",
+    "MODAL_CARD_NUMBER_LABEL": "Card Number",
+    "MODAL_EXPIRY_LABEL": "Expiry Date",
+    "MODAL_CVV_LABEL": "CVV",    "MODAL_CONFIRM_BUTTON": "Confirm Purchase",
+    "MODAL_CANCEL_BUTTON": "Cancel",
+    "PURCHASE_SUCCESS": "Purchase of the {{plan}} plan completed successfully!"
+  },
+  "TEAM": {
+    "TITLE": "Our Team",
+    "SUBTITLE": "Meet the Experts",
+    "MEMBER1_NAME": "Jesús Castillo",
+    "MEMBER1_ROLE": "Software Engineer",
+    "MEMBER2_NAME": "Yasser Rentería",
+    "MEMBER2_ROLE": "Software Engineer",
+    "MEMBER3_NAME": "Renato Calvo",
+    "MEMBER3_ROLE": "Software Engineer",
+    "MEMBER4_NAME": "Raúl Medina",
+    "MEMBER4_ROLE": "Software Engineer",
+    "MEMBER5_NAME": "Gianfranco Durand",
+    "MEMBER5_ROLE": "Software Engineer"
+  },
+  "CTA": {
+    "TITLE": "Ready to Get Started?",
+    "SUBTITLE": "Contact us today to schedule your service",
+    "BUTTON": "Contact Us"
+  },
+  "FOOTER": {
+    "RIGHTS": "All rights reserved",
+    "PRIVACY": "Privacy Policy",
+    "TERMS": "Terms of Service",
+    "SERVICES_TITLE": "Services",    "VEHICLE_MAINTENANCE": "Vehicle Maintenance",
+    "AUTOMOTIVE_REPAIRS": "Automotive Repairs",    "LEGAL_TITLE": "Terms of Service",
+    "SLOGAN": "Connect. Schedule. Trust.",
+    "LOGO_TEXT": "Tallerazo.pe"
+  }
+}

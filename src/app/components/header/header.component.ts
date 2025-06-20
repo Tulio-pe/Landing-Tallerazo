@@ -2,19 +2,56 @@ import { Component, OnInit, inject } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import { DOCUMENT, isPlatformBrowser } from '@angular/common';
 import { PLATFORM_ID } from '@angular/core';
+import { TranslateModule, TranslateService } from '@ngx-translate/core';
 
 @Component({
   selector: 'app-header',
   standalone: true,
-  imports: [CommonModule],
+  imports: [CommonModule, TranslateModule],
   templateUrl: './header.component.html',
   styleUrl: './header.component.css'
 })
-export class HeaderComponent /*implements OnInit*/ {
+export class HeaderComponent implements OnInit {
   private platformId = inject(PLATFORM_ID);
   private document = inject(DOCUMENT);
+  currentLang: string = 'en';
+  constructor(private translate: TranslateService) {
+    // Set default language
+    this.translate.setDefaultLang('en');
+    
+    // Try to get language from localStorage if in browser environment
+    if (isPlatformBrowser(this.platformId)) {
+      const savedLang = localStorage.getItem('preferredLanguage');
+      if (savedLang && (savedLang === 'en' || savedLang === 'es')) {
+        this.currentLang = savedLang;
+        this.translate.use(savedLang);
+      } else {
+        this.currentLang = 'en';
+        this.translate.use('en');
+      }
+    } else {
+      // For server-side rendering, default to English
+      this.currentLang = 'en';
+      this.translate.use('en');
+    }
+  }
+  ngOnInit(): void {
+    // Initialize browser-specific code
+    if (isPlatformBrowser(this.platformId)) {
+      // Uncomment if navbar initialization is needed
+      // this.initNavbar();
+    }
+  }
 
-  constructor() { }
+  changeLanguage(lang: string): void {
+    this.currentLang = lang;
+    this.translate.use(lang);
+    
+    // Save language preference
+    if (isPlatformBrowser(this.platformId)) {
+      localStorage.setItem('preferredLanguage', lang);
+    }
+  }
 
 
 
