@@ -1,5 +1,6 @@
 {
   "hosting": {
+    "site": "tallerazo-landingpage",
     "public": "dist/landing-page-tallerazo/browser",
     "ignore": [
       "firebase.json",
@@ -7,10 +8,7 @@
       "**/node_modules/**"
     ],
     "rewrites": [
-      {
-        "source": "**",
-        "destination": "/index.csr.html"
-      }
+      { "source": "**", "destination": "/index.html" }
     ]
   }
 }

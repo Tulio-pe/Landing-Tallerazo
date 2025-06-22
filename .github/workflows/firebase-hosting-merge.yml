@@ -17,6 +17,7 @@ jobs:
           node-version: 20          # o la versión que uses
       # 2) Instala dependencias del proyecto
       - run: npm ci                 # respeta package-lock.json
+      - run: npm run build        # ← genera dist/landing-page-tallerazo/browser
       - uses: FirebaseExtended/action-hosting-deploy@v0
         with:
           repoToken: ${{ secrets.GITHUB_TOKEN }}
