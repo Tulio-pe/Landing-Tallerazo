@@ -1,30 +1,519 @@
 /* Modal backdrop animation */
-.bg-opacity-75 {
-    animation: fadeIn 0.3s ease-in-out;
+.modal-backdrop {
+    animation: fadeIn 0.4s ease-in-out;
+    backdrop-filter: blur(4px);
 }
 
-/* Modal content animation */
-.transform {
-    animation: slideIn 0.3s ease-out;
+/* Modal content animation/* Button improvements */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), #4f46e5);
+    border: none;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 36px;
+    min-width: 100px;
+}t {
+    animation: slideInScale 0.4s cubic-bezier(0.34, 1.56, 0.64, 1);
+    max-width: 520px !important;
+    width: 90% !important;
+    box-shadow: 0 25px 50px -12px rgba(0, 0, 0, 0.25);
+    border: none;
+    overflow: hidden;
+    margin: auto;
+    border-radius: 12px;
+}
+
+.modal-content.closing {
+    animation: slideOutScale 0.3s ease-in-out;
 }
 
 @keyframes fadeIn {
-    from { opacity: 0; }
-    to { opacity: 0.75; }
+    from { 
+        opacity: 0; 
+    }
+    to { 
+        opacity: 1; 
+    }
 }
 
-@keyframes slideIn {
+@keyframes slideInScale {
     from { 
-        transform: translateY(-10%);
+        transform: translateY(-20px) scale(0.95);
         opacity: 0;
     }
     to { 
-        transform: translateY(0);
+        transform: translateY(0) scale(1);
         opacity: 1; 
     }
+}
+
+@keyframes slideOutScale {
+    from { 
+        transform: translateY(0) scale(1);
+        opacity: 1;
+    }
+    to { 
+        transform: translateY(-20px) scale(0.95);
+        opacity: 0; 
+    }
+}
+
+/* Plan selection highlight */
+.plan-highlight {
+    background: linear-gradient(135deg, var(--primary), #4f46e5);
+    color: white;
+    padding: 20px 24px;
+    border-radius: 12px 12px 0 0;
+    margin: 0;
+    text-align: center;
+    box-shadow: 0 4px 20px rgba(79, 70, 229, 0.3);
+}
+
+.plan-highlight h3 {
+    font-size: 1.25rem;
+    margin: 0;
+    margin-bottom: 4px;
+    font-weight: 700;
+}
+
+.plan-highlight p {
+    font-size: 1rem;
+    opacity: 0.95;
+    margin: 0;
+}
+
+/* Form styling improvements */
+.form-group {
+    position: relative;
+    margin-bottom: 18px;
+}
+
+.form-input {
+    width: 100%;
+    padding: 12px 14px;
+    border: 2px solid #e5e7eb;
+    border-radius: 10px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background-color: #fafafa;
+    box-sizing: border-box;
+}
+
+.form-input:focus {
+    outline: none;
+    border-color: var(--primary);
+    background-color: white;
+    box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.1);
+    transform: translateY(-1px);
+}
+
+.form-input.error {
+    border-color: #ef4444;
+    background-color: #fef2f2;
+}
+
+.form-label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #374151;
+    font-size: 14px;
+}
+
+.form-label span {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.error-message {
+    color: #ef4444;
+    font-size: 13px;
+    margin-top: 8px;
+    display: flex;
+    align-items: center;
+    gap: 6px;
+    animation: slideInError 0.3s ease-out;
+}
+
+@keyframes slideInError {
+    from {
+        opacity: 0;
+        transform: translateY(-5px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+/* Loading state */
+.loading-spinner {
+    width: 18px;
+    height: 18px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    border-top: 2px solid currentColor;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    to { transform: rotate(360deg); }
+}
+
+/* Button improvements */
+.btn-primary {
+    background: linear-gradient(135deg, var(--primary), #4f46e5);
+    border: none;
+    padding: 10px 18px;
+    border-radius: 10px;
+    font-weight: 600;
+    font-size: 14px;
+    color: white;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 6px;
+    min-height: 40px;
+    min-width: 120px;
+}
+
+.btn-primary:hover {
+    transform: translateY(-1px);
+    box-shadow: 0 8px 25px rgba(79, 70, 229, 0.4);
+}
+
+.btn-primary:disabled {
+    opacity: 0.6;
+    cursor: not-allowed;
+    transform: none;
+}
+
+.btn-secondary {
+    background: white;
+    border: 1.5px solid #d1d5db;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: 600;
+    font-size: 13px;
+    color: #374151;
+    cursor: pointer;
+    transition: all 0.3s ease;
+    min-height: 36px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-width: 100px;
+}
+
+.btn-secondary:hover {
+    border-color: #9ca3af;
+    background-color: #f9fafb;
+}
+
+
+
+/* Success message styling improvements */
+.success-message-content {
+    padding: 0;
+    margin: 0;
+    min-height: 280px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.success-icon {
+    background: linear-gradient(135deg, #10b981, #059669);
+    color: white;
+    border-radius: 50%;
+    padding: 12px;
+    box-shadow: 0 4px 20px rgba(16, 185, 129, 0.3);
+    animation: successBounce 0.6s ease-out;
+}
+
+.success-details {
+    margin-top: 20px;
+    width: 100%;
+}
+
+.countdown-message {
+    background-color: #f3f4f6;
+    padding: 8px 12px;
+    border-radius: 6px;
+    border: 1px solid #e5e7eb;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', 'Source Code Pro', monospace;
+    letter-spacing: 0.02em;
+}
+
+@keyframes successBounce {
+    0% {
+        transform: scale(0.3);
+        opacity: 0;
+    }
+    50% {
+        transform: scale(1.05);
+    }
+    70% {
+        transform: scale(0.9);
+    }
+    100% {
+        transform: scale(1);
+        opacity: 1;
+    }
+}
+
+/* Card number formatting */
+.card-input {
+    font-family: 'Courier New', monospace;
+    letter-spacing: 1px;
+    font-family: 'SF Mono', 'Monaco', 'Inconsolata', 'Fira Code', 'Droid Sans Mono', 'Source Code Pro', monospace;
+    letter-spacing: 0.05em;
+    font-weight: 500;
 }
 
 /* Make sure modal is above everything else */
 .z-50 {
     z-index: 9999;
+}
+
+/* Modal background overlay */
+.fixed.inset-0 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem;
+}
+
+/* Center modal properly */
+.flex.items-center.justify-center {
+    min-height: 100vh;
+    padding: 1rem;
+}
+
+/* Ensure backdrop covers everything */
+.modal-backdrop {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(17, 24, 39, 0.75);
+}
+
+/* Improve modal content positioning */
+.inline-block.align-bottom {
+    position: relative;
+    z-index: 10;
+}
+
+/* Responsive improvements */
+@media (max-width: 640px) {
+    .modal-content {
+        margin: 16px;
+        max-height: calc(100vh - 32px);
+        overflow-y: auto;
+        width: calc(100% - 32px) !important;
+        max-width: 420px !important;
+    }
+    
+    .plan-highlight {
+        padding: 6px 10px;
+        margin-bottom: 6px;
+    }
+    
+    .form-input {
+        padding: 10px 12px;
+        font-size: 14px;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 10px 16px;
+        font-size: 14px;
+        min-height: 40px;
+    }
+}
+
+/* Responsive adjustments for success message */
+@media (max-width: 640px) {
+    .success-message-content {
+        min-height: 260px;
+        padding: 10px;
+    }
+    
+    .success-icon {
+        padding: 10px;
+    }
+    
+    .success-icon svg {
+        width: 24px;
+        height: 24px;
+    }
+    
+    .success-message-content h4 {
+        font-size: 1rem;
+    }
+    
+    .success-message-content p {
+        font-size: 0.875rem;
+    }
+    
+    .countdown-message {
+        font-size: 0.75rem;
+        padding: 6px 10px;
+    }
+}
+
+@media (max-width: 768px) {
+    .success-message-content {
+        min-height: 270px;
+    }
+    
+    .success-details {
+        margin-top: 16px;
+    }
+}
+
+@media (max-width: 768px) {
+    .modal-content {
+        margin: 12px;
+        width: calc(100% - 24px) !important;
+        max-height: calc(100vh - 24px);
+        max-width: 450px !important;
+    }
+    
+    .plan-highlight {
+        padding: 18px 22px;
+    }
+    
+    .plan-highlight h3 {
+        font-size: 1.15rem;
+    }
+    
+    .plan-highlight p {
+        font-size: 0.95rem;
+    }
+}
+
+/* Additional modal styling for consistency */
+.modal-content .bg-white {
+    padding: 0 32px;
+}
+
+.modal-content .bg-gray-50 {
+    border-top: 1px solid #e5e7eb;
+    padding: 0 32px;
+}
+
+/* Responsive button layout */
+@media (max-width: 640px) {
+    .modal-content {
+        margin: 16px;
+        width: calc(100% - 32px) !important;
+        max-width: 400px !important;
+    }
+    
+    .plan-highlight {
+        padding: 16px 20px;
+    }
+    
+    .plan-highlight h3 {
+        font-size: 1.1rem;
+    }
+    
+    .plan-highlight p {
+        font-size: 0.95rem;
+    }
+    
+    .btn-primary, .btn-secondary {
+        padding: 8px 16px;
+        font-size: 13px;
+        min-height: 36px;
+        min-width: 100px;
+    }
+}
+
+/* Additional uniformity improvements */
+.form-group:first-child {
+    margin-top: 0;
+}
+
+.form-group:last-child {
+    margin-bottom: 0;
+}
+
+.flex.space-x-4 .form-group {
+    margin-bottom: 0;
+}
+
+.flex.space-x-4 .form-group:first-child {
+    margin-right: 0.5rem;
+}
+
+.flex.space-x-4 .form-group:last-child {
+    margin-left: 0.5rem;
+}
+
+/* Ensure consistent spacing */
+.modal-content > div {
+    padding-left: 0;
+    padding-right: 0;
+}
+
+.form-label svg {
+    color: var(--primary);
+    opacity: 0.8;
+}
+
+.btn-primary svg,
+.btn-secondary svg {
+    transition: transform 0.2s ease;
+}
+
+.btn-primary:hover svg,
+.btn-secondary:hover svg {
+    transform: scale(1.1);
+}
+
+/* Fix button layout and spacing */
+.flex.flex-col.sm\\:flex-row button {
+    width: 100%;
+}
+
+@media (min-width: 640px) {
+    .flex.flex-col.sm\\:flex-row button {
+        width: auto;
+        min-width: 120px;
+    }
+}
+
+/* Button container spacing and alignment */
+.bg-gray-50 {
+    padding: 24px 32px !important;
+}
+
+.flex.justify-center.space-x-3 {
+    justify-content: flex-end !important;
+    gap: 12px;
+}
+
+/* Fix flex layout for expiry/cvv fields */
+.flex.space-x-3 .form-group {
+    margin-bottom: 18px;
+}
+
+.flex.space-x-3 {
+    gap: 0.75rem;
 }

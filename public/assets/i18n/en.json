@@ -60,9 +60,13 @@
     "MODAL_EMAIL_LABEL": "Email",
     "MODAL_CARD_NUMBER_LABEL": "Card Number",
     "MODAL_EXPIRY_LABEL": "Expiry Date",
-    "MODAL_CVV_LABEL": "CVV",    "MODAL_CONFIRM_BUTTON": "Confirm Purchase",
+    "MODAL_CVV_LABEL": "CVV",
+    "MODAL_CONFIRM_BUTTON": "Confirm Purchase",
     "MODAL_CANCEL_BUTTON": "Cancel",
-    "PURCHASE_SUCCESS": "Purchase of the {{plan}} plan completed successfully!"
+    "PURCHASE_SUCCESS": "Purchase of the {{plan}} plan completed successfully!",
+    "PROCESSING": "Processing...",
+    "SUCCESS_MESSAGE": "Purchase completed successfully!",
+    "SUCCESS_DESCRIPTION": "Your purchase of the plan has been processed"
   },
   "TEAM": {
     "TITLE": "Our Team",
