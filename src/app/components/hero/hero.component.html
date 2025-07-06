@@ -12,7 +12,9 @@
             </p>
             <div class="mt-10 w-full flex max-w-md mx-auto lg:mx-0">
                 <div class="flex sm:flex-row flex-col gap-5 w-full">
-                    <button class="bg-[var(--primary)] text-white px-6 py-3 rounded-full hover:bg-[var(--primary-hover)] transition-colors duration-300 cursor-pointer">
+                    <button 
+                        (click)="redirectToWorkshop()"
+                        class="bg-[var(--primary)] text-white px-6 py-3 rounded-full hover:bg-[var(--primary-hover)] transition-colors duration-300 cursor-pointer">
                         {{ 'HERO.BUTTON' | translate }}
                     </button>
                 </div>
