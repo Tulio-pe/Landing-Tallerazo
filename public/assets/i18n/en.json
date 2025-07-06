@@ -85,7 +85,8 @@
   "CTA": {
     "TITLE": "Ready to Get Started?",
     "SUBTITLE": "Contact us today to schedule your service",
-    "BUTTON": "Contact Us"
+    "BUTTON": "Contact Us",
+    "START_BUTTON": "Let's Start"
   },
   "FOOTER": {
     "RIGHTS": "All rights reserved",

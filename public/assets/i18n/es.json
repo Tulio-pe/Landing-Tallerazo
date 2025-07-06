@@ -85,7 +85,8 @@
   "CTA": {
     "TITLE": "¿Listo para Comenzar?",
     "SUBTITLE": "Contáctanos hoy para programar tu servicio",
-    "BUTTON": "Contáctanos"
+    "BUTTON": "Contáctanos",
+    "START_BUTTON": "Comenzamos"
   },
   "FOOTER": {
     "RIGHTS": "Todos los derechos reservados",

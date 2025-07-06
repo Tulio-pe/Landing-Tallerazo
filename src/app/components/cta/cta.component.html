@@ -4,10 +4,13 @@
       <div class="flex flex-col md:flex-row items-center justify-between gap-8">        <div class="flex-1">          <h2 class="text-2xl sm:text-3xl font-bold">{{ 'CTA.TITLE' | translate }}</h2>
           <p class="mt-4 text-white/80">{{ 'CTA.SUBTITLE' | translate }}</p>
         </div>
-        <div class="flex-shrink-0">          <a target="_blank" href="https://tallerazo-front-three.vercel.app/" 
-             class="bg-white text-[var(--primary)] px-6 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 cursor-pointer inline-block">
-            {{ 'CTA.BUTTON' | translate }}
-          </a>
+        <div class="flex-shrink-0">
+          <div class="flex flex-col sm:flex-row gap-4">
+            <a target="_blank" href="https://tallerazo-front-three.vercel.app/" 
+               class="bg-white text-[var(--primary)] px-6 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 cursor-pointer inline-block text-center">
+              {{ 'CTA.BUTTON' | translate }}
+            </a>
+          </div>
         </div>
       </div>
     </div>

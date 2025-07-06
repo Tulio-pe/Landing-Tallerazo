@@ -53,6 +53,12 @@ export class HeaderComponent implements OnInit {
     }
   }
 
+  redirectToWorkshop(): void {
+    if (isPlatformBrowser(this.platformId)) {
+      this.document.defaultView?.open('https://chapa-tu-ruta-frontend.web.app/workshop/login', '_blank');
+    }
+  }
+
 
 
 /*
