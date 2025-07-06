@@ -47,13 +47,8 @@ export class PlansComponent implements OnDestroy {
   // Nueva función para redirección directa (para el botón "Comenzar gratis")
   redirectToFrontEnd(): void {
     if (isPlatformBrowser(this.platformId)) {
-      // Scroll to top smoothly
-      window.scrollTo({ top: 0, behavior: 'smooth' });
-      
-      // Redirect to home page or main application
-      setTimeout(() => {
-        this.router.navigate(['/']);
-      }, 300);
+      // Redirect to workshops page
+      this.document.defaultView?.open('https://chapa-tu-ruta-frontend.web.app/workshops', '_blank');
     }
   }
   
@@ -198,19 +193,13 @@ export class PlansComponent implements OnDestroy {
   }
 
   private redirectToHome(): void {
-    // Close modal first
-    this.closeModal();
+    if (isPlatformBrowser(this.platformId)) {
+      // Redirect to workshops page
+      this.document.defaultView?.open('https://chapa-tu-ruta-frontend.web.app/workshops', '_blank');
+    }
     
-    // Wait for modal close animation to complete, then redirect
-    setTimeout(() => {
-      if (isPlatformBrowser(this.platformId)) {
-        // Scroll to top of the page smoothly
-        window.scrollTo({ top: 0, behavior: 'smooth' });
-        
-        // Redirect to home page
-        this.router.navigate(['/']);
-      }
-    }, 400);
+    // Close modal after redirect
+    this.closeModal();
   }
   
   resetForm(): void {
