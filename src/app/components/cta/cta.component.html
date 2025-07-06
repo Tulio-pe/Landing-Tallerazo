@@ -6,10 +6,11 @@
         </div>
         <div class="flex-shrink-0">
           <div class="flex flex-col sm:flex-row gap-4">
-            <a target="_blank" href="https://tallerazo-front-three.vercel.app/" 
-               class="bg-white text-[var(--primary)] px-6 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 cursor-pointer inline-block text-center">
+            <button
+              (click)="redirectToWorkshop()"
+              class="bg-white text-[var(--primary)] px-6 py-3 rounded-full hover:bg-gray-100 transition-colors duration-300 cursor-pointer inline-block text-center">
               {{ 'CTA.BUTTON' | translate }}
-            </a>
+            </button>
           </div>
         </div>
       </div>

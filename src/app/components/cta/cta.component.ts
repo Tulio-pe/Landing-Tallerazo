@@ -16,7 +16,7 @@ export class CtaComponent {
 
   redirectToWorkshop(): void {
     if (isPlatformBrowser(this.platformId)) {
-      this.document.defaultView?.open('https://chapa-tu-ruta-frontend.web.app/workshop/login', '_blank');
+      this.document.defaultView?.open('https://chapa-tu-ruta-frontend.web.app/workshops', '_blank');
     }
   }
 }
