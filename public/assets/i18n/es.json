@@ -60,9 +60,13 @@
     "MODAL_EMAIL_LABEL": "Correo electrónico",
     "MODAL_CARD_NUMBER_LABEL": "Número de tarjeta",
     "MODAL_EXPIRY_LABEL": "Fecha de expiración",
-    "MODAL_CVV_LABEL": "CVV",    "MODAL_CONFIRM_BUTTON": "Confirmar compra",
+    "MODAL_CVV_LABEL": "CVV",
+    "MODAL_CONFIRM_BUTTON": "Confirmar compra",
     "MODAL_CANCEL_BUTTON": "Cancelar",
-    "PURCHASE_SUCCESS": "¡Compra del plan {{plan}} realizada con éxito!"
+    "PURCHASE_SUCCESS": "¡Compra del plan {{plan}} realizada con éxito!",
+    "PROCESSING": "Procesando...",
+    "SUCCESS_MESSAGE": "¡Compra realizada con éxito!",
+    "SUCCESS_DESCRIPTION": "Se ha procesado tu compra del plan"
   },
   "TEAM": {
     "TITLE": "Nuestro Equipo",
@@ -74,14 +78,13 @@
     "MEMBER3_NAME": "Renato Calvo",
     "MEMBER3_ROLE": "Ingeniería de Software",
     "MEMBER4_NAME": "Raúl Medina",
-    "MEMBER4_ROLE": "Ingeniería de Software",
-    "MEMBER5_NAME": "Gianfranco Durand",
-    "MEMBER5_ROLE": "Ingeniería de Software"
+    "MEMBER4_ROLE": "Ingeniería de Software"
   },
   "CTA": {
     "TITLE": "¿Listo para Comenzar?",
     "SUBTITLE": "Contáctanos hoy para programar tu servicio",
-    "BUTTON": "Contáctanos"
+    "BUTTON": "Contáctanos",
+    "START_BUTTON": "Comenzamos"
   },
   "FOOTER": {
     "RIGHTS": "Todos los derechos reservados",
