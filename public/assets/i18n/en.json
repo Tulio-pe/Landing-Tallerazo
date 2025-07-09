@@ -78,7 +78,10 @@
     "MEMBER3_NAME": "Renato Calvo",
     "MEMBER3_ROLE": "Software Engineer",
     "MEMBER4_NAME": "Raúl Medina",
-    "MEMBER4_ROLE": "Software Engineer"
+    "MEMBER4_ROLE": "Software Engineer",
+    "VIDEOS_TITLE": "Videos",
+    "VIDEO_LINK_TEXT": "Tulio.pe-About the team",
+    "VIDEO_LINK_TEXT2": "Tulip.pe-About the product-L.P."
   },
   "CTA": {
     "TITLE": "Ready to Get Started?",
